@@ -37,12 +37,15 @@ class FoodStoreTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "RE", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "RE", for: indexPath) as! FoodStoreTableViewCell
 
         // Configure the cell...
-        cell.textLabel?.text = foodStoreNames[indexPath.row]
-        cell.imageView?.image = UIImage(named: foodStoreImages[indexPath.row])
+//        cell.textLabel?.text = foodStoreNames[indexPath.row]
+//        cell.imageView?.image = UIImage(named: foodStoreImages[indexPath.row])
 //        cell.imageView?.image = UIImage(named:"02")
+        
+        cell.nameLabel.text = foodStoreNames[indexPath.row]
+        cell.thumbnailImageView.image = UIImage(named: foodStoreImages[indexPath.row])
 
         return cell
     }

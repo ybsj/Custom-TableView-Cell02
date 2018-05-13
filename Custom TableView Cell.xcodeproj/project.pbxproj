@@ -12,6 +12,7 @@
 		0568D89620A7125200CB259C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0568D89520A7125200CB259C /* Assets.xcassets */; };
 		0568D89920A7125200CB259C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0568D89720A7125200CB259C /* LaunchScreen.storyboard */; };
 		0568D8A520A7175C00CB259C /* FoodStoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0568D8A420A7175C00CB259C /* FoodStoreTableViewController.swift */; };
+		05AE16B820A8619A00978E45 /* FoodStoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AE16B720A8619A00978E45 /* FoodStoreTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		0568D89820A7125200CB259C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0568D89A20A7125200CB259C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0568D8A420A7175C00CB259C /* FoodStoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodStoreTableViewController.swift; sourceTree = "<group>"; };
+		05AE16B720A8619A00978E45 /* FoodStoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodStoreTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				0568D88E20A7125200CB259C /* AppDelegate.swift */,
 				0568D89220A7125200CB259C /* Main.storyboard */,
+				05AE16B720A8619A00978E45 /* FoodStoreTableViewCell.swift */,
 				0568D89520A7125200CB259C /* Assets.xcassets */,
 				0568D89720A7125200CB259C /* LaunchScreen.storyboard */,
 				0568D89A20A7125200CB259C /* Info.plist */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0568D88F20A7125200CB259C /* AppDelegate.swift in Sources */,
+				05AE16B820A8619A00978E45 /* FoodStoreTableViewCell.swift in Sources */,
 				0568D8A520A7175C00CB259C /* FoodStoreTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
