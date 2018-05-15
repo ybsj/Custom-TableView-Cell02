@@ -9,8 +9,12 @@
 import UIKit
 
 class FoodStoreTableViewController: UITableViewController {
-    var foodStoreNames = ["번개반점", "왕짜장", "홍콩반점"]
-    var foodStoreImages = ["01", "02", "03"]
+    var foodStoreNames = ["번개반점", "아딸", "왕짜장", "토마토도시락 동의과학대점", "늘해랑",  "홍콩반점0410 양정점"]
+    var foodStoreImages = ["01", "02", "03", "04", "05",  "06"]
+    var foodStoreLocation = ["부산광역시 부산진구 양정동 418-282","부산광역시 부산진구 양정동 393-18",
+                             "부산광역시 부산진구 양정1동 356-22", "부산광역시 부산진구 양정동",
+                            "부산광역시 부산진구 양정1동 350-1", "부산광역시 부산진구 양정1동 중앙대로 902"]
+    var foodStoreType = ["중국식당", "분식점", "중국식당", "도시락", "돼지국밥집", "중국식당"]
     
 
     override func viewDidLoad() {
@@ -21,6 +25,7 @@ class FoodStoreTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        self.title = " DIT 철가방"
     }
 
 
@@ -46,6 +51,8 @@ class FoodStoreTableViewController: UITableViewController {
         
         cell.nameLabel.text = foodStoreNames[indexPath.row]
         cell.thumbnailImageView.image = UIImage(named: foodStoreImages[indexPath.row])
+        cell.locationLabel.text = foodStoreLocation[indexPath.row]
+        cell.typeLabel.text = foodStoreType[indexPath.row]
 
         return cell
     }
