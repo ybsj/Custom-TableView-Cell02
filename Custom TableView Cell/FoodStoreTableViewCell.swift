@@ -2,8 +2,8 @@
 //  FoodStoreTableViewCell.swift
 //  Custom TableView Cell
 //
-//  Created by 김종현 on 2018. 5. 13..
-//  Copyright © 2018년 김종현. All rights reserved.
+//  Created by 정준수 on 2018. 5. 21..
+//  Copyright © 2018년 201550057. All rights reserved.
 //
 
 import UIKit
@@ -17,7 +17,7 @@ class FoodStoreTableViewCell: UITableViewCell {
     }
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
-    @IBOutlet weak var typeLabel: UILabel!
+    @IBOutlet weak var telLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

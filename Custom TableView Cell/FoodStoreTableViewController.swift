@@ -2,19 +2,19 @@
 //  FoodStoreTableViewController.swift
 //  Custom TableView Cell
 //
-//  Created by 김종현 on 2018. 5. 12..
-//  Copyright © 2018년 김종현. All rights reserved.
+//  Created by 정준수 on 2018. 5. 21..
+//  Copyright © 2018년 201550057. All rights reserved.
 //
 
 import UIKit
 
 class FoodStoreTableViewController: UITableViewController {
-    var foodStoreNames = ["번개반점", "아딸", "왕짜장", "토마토도시락 동의과학대점", "늘해랑",  "홍콩반점0410 양정점"]
+    var foodStoreNames = ["늘해랑", "번개반점", "아딸", "왕짜장", "토마토 도시락",  "홍콩반점"]
     var foodStoreImages = ["01", "02", "03", "04", "05",  "06"]
     var foodStoreLocation = ["부산광역시 부산진구 양정동 418-282","부산광역시 부산진구 양정동 393-18",
                              "부산광역시 부산진구 양정1동 356-22", "부산광역시 부산진구 양정동",
                             "부산광역시 부산진구 양정1동 350-1", "부산광역시 부산진구 양정1동 중앙대로 902"]
-    var foodStoreType = ["중국식당", "분식점", "중국식당", "도시락", "돼지국밥집", "중국식당"]
+    var foodStoreTel = ["055-111-1111", "055-222-2222", "055-333-3333", "055-444-4444", "055-555-5555", "055-666-6666"]
     
 
     override func viewDidLoad() {
@@ -52,7 +52,7 @@ class FoodStoreTableViewController: UITableViewController {
         cell.nameLabel.text = foodStoreNames[indexPath.row]
         cell.thumbnailImageView.image = UIImage(named: foodStoreImages[indexPath.row])
         cell.locationLabel.text = foodStoreLocation[indexPath.row]
-        cell.typeLabel.text = foodStoreType[indexPath.row]
+        cell.telLabel.text = foodStoreTel[indexPath.row]
 
         return cell
     }
