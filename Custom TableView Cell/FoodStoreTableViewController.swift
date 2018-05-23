@@ -7,7 +7,7 @@
 //
 
 import UIKit
- 
+
 class FoodStoreTableViewController: UITableViewController {
     var foodStoreNames = ["늘해랑", "번개반점", "아딸", "왕짜장", "토마토 도시락",  "홍콩반점"]
     var foodStoreImages = ["01", "02", "03", "04", "05",  "06"]
@@ -57,10 +57,26 @@ class FoodStoreTableViewController: UITableViewController {
         return cell
     }
 
+      override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            print(indexPath.row)
+            print(foodStoreNames[indexPath.row])
+            print(foodStoreTel[indexPath.row])
+            
+            //전화걸기 alert
+            let optionMenu = UIAlertController(title: "전화걸기", message : foodStoreTel[indexPath.row], preferredStyle : .actionSheet)
+            let callAction = UIAlertAction(title : "전화를 거시겠습니까?", style : .default) { (action: UIAlertAction) -> Void in
+                  print("전화를 걸고 있습니다.!!! 뚜뚜뚜!!")
+            }
+            let cancelAction = UIAlertAction(title : "취소", style: .cancel, handler: nil)
+            
+            optionMenu.addAction(callAction)
+            optionMenu.addAction(cancelAction)
+            present(optionMenu, animated: true, completion: nil)
+      }
     /*
-    // Override to support conditional editing of the table view.
+     Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
+         Return false if you do not want the specified item to be editable.
         return true
     }
     */
