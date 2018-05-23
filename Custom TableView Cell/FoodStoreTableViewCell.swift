@@ -11,7 +11,7 @@ import UIKit
 class FoodStoreTableViewCell: UITableViewCell {
     @IBOutlet weak var thumbnailImageView: UIImageView! {
         didSet {
-            thumbnailImageView.layer.cornerRadius = 10.0
+            thumbnailImageView.layer.cornerRadius = 15.0
             thumbnailImageView.clipsToBounds = true
         }
     }
