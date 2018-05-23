@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+ 
 class FoodStoreTableViewController: UITableViewController {
     var foodStoreNames = ["늘해랑", "번개반점", "아딸", "왕짜장", "토마토 도시락",  "홍콩반점"]
     var foodStoreImages = ["01", "02", "03", "04", "05",  "06"]
