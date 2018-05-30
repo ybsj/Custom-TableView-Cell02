@@ -3,7 +3,7 @@
 //  Custom TableView Cell
 //
 //  Created by D7703_17 on 2018. 5. 28..
-//  Copyright © 2018년 황지성. All rights reserved.
+//  Copyright © 2018년 박금상. All rights reserved.
 //
 
 import UIKit
