@@ -14,6 +14,7 @@
 		0568D8A520A7175C00CB259C /* FoodStoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0568D8A420A7175C00CB259C /* FoodStoreTableViewController.swift */; };
 		05AE16B820A8619A00978E45 /* FoodStoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AE16B720A8619A00978E45 /* FoodStoreTableViewCell.swift */; };
 		3441C53F20BBDA7300DCB07A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3441C53E20BBDA7300DCB07A /* DetailViewController.swift */; };
+		743095BB20CE512000D7C73A /* TotaltMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743095BA20CE512000D7C73A /* TotaltMapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		0568D8A420A7175C00CB259C /* FoodStoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodStoreTableViewController.swift; sourceTree = "<group>"; };
 		05AE16B720A8619A00978E45 /* FoodStoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodStoreTableViewCell.swift; sourceTree = "<group>"; };
 		3441C53E20BBDA7300DCB07A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		743095BA20CE512000D7C73A /* TotaltMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotaltMapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				0568D88E20A7125200CB259C /* AppDelegate.swift */,
 				0568D89220A7125200CB259C /* Main.storyboard */,
+				743095BA20CE512000D7C73A /* TotaltMapViewController.swift */,
 				05AE16B720A8619A00978E45 /* FoodStoreTableViewCell.swift */,
 				0568D89520A7125200CB259C /* Assets.xcassets */,
 				0568D89720A7125200CB259C /* LaunchScreen.storyboard */,
@@ -145,6 +148,7 @@
 				0568D88F20A7125200CB259C /* AppDelegate.swift in Sources */,
 				05AE16B820A8619A00978E45 /* FoodStoreTableViewCell.swift in Sources */,
 				0568D8A520A7175C00CB259C /* FoodStoreTableViewController.swift in Sources */,
+				743095BB20CE512000D7C73A /* TotaltMapViewController.swift in Sources */,
 				3441C53F20BBDA7300DCB07A /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -88,7 +88,13 @@
                             <outlet property="delegate" destination="4v7-NM-hQw" id="dWW-c5-NcN"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Dcs-q0-Hyr"/>
+                    <navigationItem key="navigationItem" id="Dcs-q0-Hyr">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="map" id="Qhy-J5-2dg">
+                            <connections>
+                                <segue destination="61F-Ol-Qme" kind="show" identifier="totaltMap" id="rDz-5K-QDg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ee-Cp-xvM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -149,7 +155,38 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="peG-BM-yS8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1301.5999999999999" y="77.811094452773617"/>
+            <point key="canvasLocation" x="1319" y="-255"/>
+        </scene>
+        <!--Totalt Map View Controller-->
+        <scene sceneID="DDX-UZ-ssw">
+            <objects>
+                <viewController id="61F-Ol-Qme" customClass="TotaltMapViewController" customModule="Custom_TableView_Cell" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LeZ-Yz-A2d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="BRo-L0-Mgr">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Dfm-mB-U30" firstAttribute="bottom" secondItem="BRo-L0-Mgr" secondAttribute="bottom" id="60X-sI-hiO"/>
+                            <constraint firstItem="Dfm-mB-U30" firstAttribute="trailing" secondItem="BRo-L0-Mgr" secondAttribute="trailing" id="6lw-Lq-LKy"/>
+                            <constraint firstItem="BRo-L0-Mgr" firstAttribute="top" secondItem="Dfm-mB-U30" secondAttribute="top" id="GOr-Z1-8pd"/>
+                            <constraint firstItem="BRo-L0-Mgr" firstAttribute="leading" secondItem="Dfm-mB-U30" secondAttribute="leading" id="PO9-0x-x9y"/>
+                            <constraint firstItem="Dfm-mB-U30" firstAttribute="bottom" secondItem="BRo-L0-Mgr" secondAttribute="bottom" id="dU9-AQ-uzC"/>
+                            <constraint firstItem="BRo-L0-Mgr" firstAttribute="top" secondItem="Dfm-mB-U30" secondAttribute="top" id="jq8-Ri-Z7m"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Dfm-mB-U30"/>
+                    </view>
+                    <connections>
+                        <outlet property="totaltMapView" destination="BRo-L0-Mgr" id="bEa-y8-MPr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g06-sA-tGZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1319" y="415"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qIc-Ez-8m8">
@@ -170,4 +207,7 @@
             <point key="canvasLocation" x="-255" y="78"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="map" width="24" height="24"/>
+    </resources>
 </document>

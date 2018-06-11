@@ -136,7 +136,13 @@ class FoodStoreTableViewController: UITableViewController {
                       foodMeuns[indexPath.row]
             }
             
-      }
+      }else if segue.identifier == "totaltMap" {
+        let destinationController = segue.destination as!
+        TotaltMapViewController
+        destinationController.loctions = foodStoreLocation
+        destinationController.names = foodStoreNames
+        
+        }
     }
 
 }
